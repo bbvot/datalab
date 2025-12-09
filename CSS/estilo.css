@@ -1,6 +1,7 @@
 body {
-    background-color: #2b2a2a;
+    background-color: #7e7b7b;
     color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
 }
 h1, h2 {
     text-align: center;
@@ -14,14 +15,27 @@ a {
     color: #cfff5e;
     text-decoration: none;
 }
+a {
+  color: #cfff5e;
+  text-decoration: none;
+  transition: all 0.35s ease;   /* hace suave el movimiento */
+  display: inline-block;        /* permite movimiento */
+}
+
+/* efecto hover */
+a:hover {
+  transform: translateY(-5px); /* se eleva un poquito */
+  text-shadow: 0px 0px 10px #eaff9e;
+  letter-spacing: 1px;         /* se expande suave */
+}
 
 img {
-    width: 50%;
+    width: 20%;
     border-radius: 15px;
-    display: block; 
-    margin: 30px auto;
+
+    margin: 20px auto;
 }
 
 h4 {
-    color: #6663fd;
+    color: #1900f6;
 }
